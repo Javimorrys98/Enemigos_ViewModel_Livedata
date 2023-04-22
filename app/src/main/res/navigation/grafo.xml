@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafo"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="iestr.gag.examen.view.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_partidaFragment"
+            app:destination="@id/partidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partidaFragment"
+        android:name="iestr.gag.examen.view.PartidaFragment"
+        android:label="fragment_partida"
+        tools:layout="@layout/fragment_partida" >
+        <action
+            android:id="@+id/action_partidaFragment_to_finFragment"
+            app:destination="@id/finFragment"
+            app:popUpTo="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finFragment"
+        android:name="iestr.gag.examen.view.FinFragment"
+        android:label="fragment_fin"
+        tools:layout="@layout/fragment_fin" >
+        <argument
+            android:name="puntos"
+            app:argType="integer" />
+    </fragment>
+</navigation>

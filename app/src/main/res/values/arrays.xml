@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Arma del héroe -->
+    <string-array name="etiqueta_arma">
+        <item>Cuchillos</item>
+        <item>Espada y escudo</item>
+        <item>Hacha</item>
+        <item>Maza</item>
+    </string-array>
+    <string-array name="valor_arma">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Tipos de enemigo -->
+    <string-array name="etiqueta_tipos">
+        <item>Vampiro</item>
+        <item>Demonio</item>
+        <item>Orco</item>
+        <item>Troll</item>
+    </string-array>
+    <string-array name="valor_tipos">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
